@@ -1,0 +1,22 @@
+/*  */
+.btn-circle-30{
+	height: 30px;
+	width:30px;
+	border-radius: 30px;
+	-moz-border-radius:30px;
+	-webkit-border-radius:30px;
+}
+.btn-circle-50{
+	height: 50px;
+	width:50px;
+	border-radius: 50px;
+	-moz-border-radius:50px;
+	-webkit-border-radius:50px;
+}
+.btn-circle-80{
+	height: 80px;
+	width:80px;
+	border-radius: 80px;
+	-moz-border-radius:80px;
+	-webkit-border-radius:80px;
+}

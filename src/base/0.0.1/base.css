@@ -1,0 +1,43 @@
+ font size */
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.f36{font-size:36px;}
+/* h1-h6 */
+h1{font-size:36px;}
+h2{font-size:30px;}
+h3{font-size:24px;}
+h4{font-size:18px;}
+h5{font-size:14px;}
+h6{font-size:12px;}
+/* color  */
+.fred{color:#f30;}
+.fyellow{color:#ff3;}
+.forange{color:#ff4a00;}
+.fblue{color:#00f;}
+.fgreen{color:#0f0;}
+.fgrey{color:#ccc;}
+
+/* background */
+.bgblue{background: #428bca;}
+.bgpink{background: #fcf8e3;}
+.bgdff0d8{background: #dff0d8;}
+.bgd9edf7{background: #d9edf7;}
+
+/* link */
+a{color: #666}
+a:hover{text-decoration: underline;}
+
+/* float */
+.fL{float: left;}
+.fR{float:right;}
+.fN{float:none;}
+
+/* display */
+.disNone{display: none;}
+.disBlock{display: block;}
+.disInlineBlock{display: inline-block;}
+.disTable{display: table;}
+

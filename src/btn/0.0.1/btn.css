@@ -1,0 +1,17 @@
+/*  */
+.btn{
+	display: inline-block;
+	border:1px solid transparent;
+	font-size: 12px;
+	text-align: center;
+	line-height: 1.5;
+	vertical-align: middle;
+	white-space:nowrap;
+}
+.btn-default{
+	padding: 6px 12px;
+	color: #666;
+	background: #efefef;
+	border-color:#a9a9a9;
+}
+
