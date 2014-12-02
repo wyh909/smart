@@ -1,4 +1,10 @@
-/*  */
+/**
+* 漂亮的css3按钮,直角/圆角/圆形/椭圆形及常用8种颜色单独配置
+* author:	wangyanhong@cmcm.com
+* date:		2014-11-26
+* version:	0.0.1
+*/
+
 .btn {
 	width: 140px;
 	display: inline-block;
