@@ -1,4 +1,4 @@
-/* font size */
+/* font size 字体大小*/
 .f12 {
 	font-size:12px;
 }
@@ -17,91 +17,106 @@
 .f36 {
 	font-size: 36px;
 }
-/* h1-h6 */
-h1, .h1 {
-	font-size: 36px;
-}
-h2, .h2 {
-	font-size: 30px;
-}
-h3, .h3 {
-	font-size: 24px;
-}
-h4, .h4 {
-	font-size: 18px;
-}
-h5, .h5 {
-	font-size: 14px;
-}
-h6, .h6 {
-	font-size: 12px;
-}
-/* color  */
-.color-red {
+/* color 字体颜色 */
+/* 红色 */
+.c-red {
 	color: #f30;
 }
-.color-yellow {
+/* 黄色 */
+.c-yellow {
 	color: #ff3;
 }
-.color-orange {
+/* 橙色 */
+.c-orange {
 	color: #ff4a00;
 }
-.color-blue {
+/* 蓝色 */
+.c-blue {
 	color: #00f;
 }
-.color-green {
+/* 绿色 */
+.c-green {
 	color: #0f0;
 }
-.color-grey {
+/* 灰色 */
+.c-grey {
 	color: #ccc;
 }
+/* 黑色 */
+.c-black {
+	color: #000;
+}
+/* 白色 */
+.c-white {
+	color: #fff;
+}
 
-/* background */
+/* 背景颜色 */
+/* 红色 */
+.bg-red {
+	background: #f30;
+}
+/* 黄色 */
+.bg-yellow {
+	background: #ff3;
+}
+/* 橘色 */
+.bg-orange {
+	background: #ff4a00;
+}
+/* 蓝色 */
 .bg-blue {
-	background: #428bca;
+	background: #00f;
 }
-.bg-pink {
-	background: #fcf8e3;
+/* 绿色 */
+.bg-green {
+	color: #0f0;
 }
-.bg-dff0d8 {
-	background: #dff0d8;
+/* 灰色 */
+.bg-grey {
+	color: #ccc;
 }
-.bg-d9edf7 {
-	background: #d9edf7;
+/* 黑色 */
+.bg-black {
+	color: #000;
+}
+/* 白色 */
+.bg-white {
+	color: #fff;
 }
 
-/* link */
-a {
-	color: #666;
-}
-a:hover {
-	text-decoration: underline;
-}
-
-/* float */
-.float-left {
+/* float 浮动 */
+/* 居左 */
+.f-left {
 	float: left;
 }
-.float-right {
+/* 居右 */
+.f-right {
 	float: right;
 }
-.float-none {
+/* 默认没有浮动 */
+.f-none {
 	float: none;
 }
 
-/* display */
+/* display 显示 */
+/* 不显示 */
 .dis-none {
 	display: none;
 }
+/* 显示为块级元素 */
 .dis-block {
 	display: block;
 }
+/* 显示为行内元素 */
 .dis-inline {
 	display: inline;
 }
+/* 显示为行内块级元素 */
 .dis-inlineblock {
 	display: inline-block;
 }
+/* 显示为表格元素 */
 .dis-table {
 	display: table;
 }
