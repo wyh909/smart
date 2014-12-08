@@ -1,0 +1,57 @@
+/**
+* 常用的表格样式
+* author:	wangyanhong@cmcm.com
+* date:		2014-12-06
+* version:	0.0.1
+*/
+@import '../../base/0.0.1/base_color';
+$border: 1px solid #ccc;
+.table {
+	width: 100%;
+	border: $border;
+	border-collapse: collapse;
+	line-height: 1.5em;
+}
+.table>thead>tr>th, table>tbody>tr>td {
+	border-right: $border;
+	box-sizing: border-box;
+	padding: 5px;
+	text-align: left;
+}
+.table>thead>tr>th {
+	border-bottom: $border;
+}
+.table>tbody>tr>td {
+	border-top: $border;
+}
+/* 没有竖线框 */
+.table.table-default>thead>tr>th,.table.table-default>tbody>tr>td {
+	border-right: 0 none;
+}
+/* 没有边框 */
+.table.table-noborder {
+	border: 0 none;
+} 
+.table-noborder>thead>tr>th,.table-noborder>tbody>tr>td {
+	border-right: 0 none;
+}
+/* 隔行换色 */
+.table-stripe>tbody>tr:nth-child(odd){
+	background: #f9f9f9;
+}
+
+/* 隔行换色的不同颜色 */
+@mixin bg($color){
+  background: $color;
+}
+@each $name, $color in $colorList {
+	.table-stripe-#{$name}>tbody>tr:nth-child(odd), .stripe-#{$name} {
+		@if $name == 'yellow'  {
+			@include bg(lighten($color, 30%));
+		}@else if $name == 'grey' {
+			@include bg($color);
+		}@else {
+			@include bg(lighten($color, 45%));
+		}
+	}
+}

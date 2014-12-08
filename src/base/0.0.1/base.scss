@@ -1,0 +1,148 @@
+/**
+* described:	基础样式,常用的字体/定位/浮动等,
+* 写法:属性的首字母或缩写-值
+* author:		wangyanhong
+* date:			2014-12-05
+* version:		0.0.1
+*/
+
+/* 字体大小 */
+$fontSize: 12, 14, 16, 18, 20, 22, 24, 28, 32, 36; 
+@each $n in $fontSize {
+	.f#{$n} {
+		font-size: #{$n}px;
+	}
+}
+
+/* 字体位置 */
+/* 文本居左 */
+.t-left {
+	text-align: left;
+}
+/* 文本居中 */
+.t-center {
+	text-align: center;
+}
+/* 文本居右 */
+.t-right {
+	text-align: right;
+}
+/* 文字是否有下划线 */
+/* 有下划线 */
+.t-underline {
+	text-decoration: underline;
+}
+.t-none {
+	text-decoration: none;
+}
+
+/* float 浮动 */
+/* 居左 */
+.f-left {
+	float: left;
+}
+/* 居右 */
+.f-right {
+	float: right;
+}
+/* 默认没有浮动 */
+.f-none {
+	float: none;
+}
+
+/* display 显示 */
+/* 不显示 */
+.d-none {
+	display: none;
+}
+/* 显示为块级元素 */
+.d-block {
+	display: block;
+}
+/* 显示为行内元素 */
+.d-inline {
+	display: inline;
+}
+/* 显示为行内块级元素 */
+.d-inlineblock {
+	display: inline-block;
+	*display: inline;
+	*zoom: 1;
+}
+/* 显示为表格元素 */
+.d-table {
+	display: table;
+}
+
+/* overflow 是否显示 */
+.o-visible {
+	overflow: visible;
+}
+.o-hidden {
+	overflow: hidden;
+}
+
+/*  元素定位 */
+/* 绝对定位 */
+.p-absolute {
+	position: absolute;
+}
+/* 相对定位 */
+.p-relative {
+	position: relative;
+}
+/* 固定定位 */
+.p-fixed {
+	position: fixed;
+}
+.p-static {
+	position: static;
+}
+
+/* vertical 上下定位 */
+.v-top {
+	vertical-align: top;
+}
+.v-middle {
+	vertical-align: middle;
+}
+.v-bottom {
+	vertical-align: bottom;
+}
+.v-texttop {
+	vertical-align: text-top;
+}
+.v-textbottom {
+	vertical-align: text-bottom;
+}
+.v-sub {
+	vertical-align: sub;
+}
+.v-super {
+	vertical-align: super;
+}
+.v-baseline {
+	vertical-align: baseline;
+}
+.v-inherit {
+	vertical-align: inherit;
+}
+
+/* cursor 鼠标显示形状 */
+.c-default {
+	cursor: default;
+}
+.c-pointer {
+	cursor: pointer;
+}
+
+/* css3的常用固定属性 */
+
+$brdbox: border-box;
+/* box-sizing */
+.b-borderbox {
+	box-sizing: $brdbox;
+	-o-box-sizing: $brdbox;
+	-moz-box-sizing: $brdbox;
+	-webkit-box-sizing: $brdbox;
+}

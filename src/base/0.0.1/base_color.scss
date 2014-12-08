@@ -1,0 +1,18 @@
+/**
+* described:	基础样式,常用的字体/定位/浮动等,
+* 写法:属性的首字母或缩写-值
+* author:		wangyanhong
+* date:			2014-12-05
+* version:		0.0.1
+*/
+/* 颜色 */
+$colorList: ('red': #e54028, 'orange':#ff4500, 'yellow': #ffd959, 'green': #60af00, 'blue': #00a2ed, 'violet': #a200c2, 'black': #111, 'grey': #eee, 'white': #fff);
+
+@each $name, $color in $colorList {
+	.c-#{$name} {
+		color: #{$color};
+	}
+	.bg-#{$name} {
+		background: #{$color};
+	}
+}

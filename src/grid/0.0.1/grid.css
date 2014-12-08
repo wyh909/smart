@@ -1,0 +1,131 @@
+@charset "UTF-8";
+/**
+* 常用的表格样式
+* author:	wangyanhong@cmcm.com
+* date:		2014-12-06
+* version:	0.0.1
+*/
+/**
+* described:	基础样式,常用的字体/定位/浮动等,
+* 写法:属性的首字母或缩写-值
+* author:		wangyanhong
+* date:			2014-12-05
+* version:		0.0.1
+*/
+/* 颜色 */
+.c-red {
+  color: #e54028; }
+
+.bg-red {
+  background: #e54028; }
+
+.c-orange {
+  color: #ff4500; }
+
+.bg-orange {
+  background: #ff4500; }
+
+.c-yellow {
+  color: #ffd959; }
+
+.bg-yellow {
+  background: #ffd959; }
+
+.c-green {
+  color: #60af00; }
+
+.bg-green {
+  background: #60af00; }
+
+.c-blue {
+  color: #00a2ed; }
+
+.bg-blue {
+  background: #00a2ed; }
+
+.c-violet {
+  color: #a200c2; }
+
+.bg-violet {
+  background: #a200c2; }
+
+.c-black {
+  color: #111; }
+
+.bg-black {
+  background: #111; }
+
+.c-grey {
+  color: #eee; }
+
+.bg-grey {
+  background: #eee; }
+
+.c-white {
+  color: #fff; }
+
+.bg-white {
+  background: #fff; }
+
+.table {
+  width: 100%;
+  border: 1px solid #ccc;
+  border-collapse: collapse;
+  line-height: 1.5em; }
+
+.table > thead > tr > th, table > tbody > tr > td {
+  border-right: 1px solid #ccc;
+  box-sizing: border-box;
+  padding: 5px;
+  text-align: left; }
+
+.table > thead > tr > th {
+  border-bottom: 1px solid #ccc; }
+
+.table > tbody > tr > td {
+  border-top: 1px solid #ccc; }
+
+/* 没有竖线框 */
+.table.table-default > thead > tr > th, .table.table-default > tbody > tr > td {
+  border-right: 0 none; }
+
+/* 没有边框 */
+.table.table-noborder {
+  border: 0 none; }
+
+.table-noborder > thead > tr > th, .table-noborder > tbody > tr > td {
+  border-right: 0 none; }
+
+/* 隔行换色 */
+.table-stripe > tbody > tr:nth-child(odd) {
+  background: #f9f9f9; }
+
+/* 隔行换色的不同颜色 */
+.table-stripe-red > tbody > tr:nth-child(odd), .stripe-red {
+  background: #fef6f5; }
+
+.table-stripe-orange > tbody > tr:nth-child(odd), .stripe-orange {
+  background: #ffece5; }
+
+.table-stripe-yellow > tbody > tr:nth-child(odd), .stripe-yellow {
+  background: #fffcf2; }
+
+.table-stripe-green > tbody > tr:nth-child(odd), .stripe-green {
+  background: #cfff96; }
+
+.table-stripe-blue > tbody > tr:nth-child(odd), .stripe-blue {
+  background: #d4f1ff; }
+
+.table-stripe-violet > tbody > tr:nth-child(odd), .stripe-violet {
+  background: #f1a8ff; }
+
+.table-stripe-black > tbody > tr:nth-child(odd), .stripe-black {
+  background: #848484; }
+
+.table-stripe-grey > tbody > tr:nth-child(odd), .stripe-grey {
+  background: #eee; }
+
+.table-stripe-white > tbody > tr:nth-child(odd), .stripe-white {
+  background: white; }
+
+/*# sourceMappingURL=grid.css.map */
