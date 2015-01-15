@@ -1,0 +1,225 @@
+@charset "UTF-8";
+/**
+* 按钮常用的样式,包括
+* author:	wangyanhong@cmcm.com
+* date:		2014-11-26
+* version:	0.0.1
+*/
+.btn-round, .btn-round-red, .btn-round-orange, .btn-round-yellow, .btn-round-green, .btn-round-blue, .btn-round-violet, .btn-round-black, .btn-round-grey, .btn-select, .btn-select-red, .btn-select-orange, .btn-select-yellow, .btn-select-green, .btn-select-blue, .btn-select-violet, .btn-select-black, .btn-select-grey, .btn-switch, .btn-switch-red, .btn-switch-orange, .btn-switch-yellow, .btn-switch-green, .btn-switch-blue, .btn-switch-violet, .btn-switch-black, .btn-switch-grey {
+  border-radius: 3px; }
+
+.btn-default, .btn-default-red, .btn-default-orange, .btn-default-yellow, .btn-default-green, .btn-default-blue, .btn-default-violet, .btn-default-black, .btn-default-grey, .btn-round, .btn-round-red, .btn-round-orange, .btn-round-yellow, .btn-round-green, .btn-round-blue, .btn-round-violet, .btn-round-black, .btn-round-grey, .btn-circle, .btn-circle-red, .btn-circle-orange, .btn-circle-yellow, .btn-circle-green, .btn-circle-blue, .btn-circle-violet, .btn-circle-black, .btn-circle-grey, .btn-select, .btn-select-red, .btn-select-orange, .btn-select-yellow, .btn-select-green, .btn-select-blue, .btn-select-violet, .btn-select-black, .btn-select-grey, .btn-switch, .btn-switch-red, .btn-switch-orange, .btn-switch-yellow, .btn-switch-green, .btn-switch-blue, .btn-switch-violet, .btn-switch-black, .btn-switch-grey, .btn-switch .btn-second, .btn-switch-red .btn-second, .btn-switch-orange .btn-second, .btn-switch-yellow .btn-second, .btn-switch-green .btn-second, .btn-switch-blue .btn-second, .btn-switch-violet .btn-second, .btn-switch-black .btn-second, .btn-switch-grey .btn-second {
+  color: #333; }
+
+.btn-default, .btn-default-red, .btn-default-orange, .btn-default-yellow, .btn-default-green, .btn-default-blue, .btn-default-violet, .btn-default-black, .btn-default-grey, .btn-round, .btn-round-red, .btn-round-orange, .btn-round-yellow, .btn-round-green, .btn-round-blue, .btn-round-violet, .btn-round-black, .btn-round-grey, .btn-circle, .btn-circle-red, .btn-circle-orange, .btn-circle-yellow, .btn-circle-green, .btn-circle-blue, .btn-circle-violet, .btn-circle-black, .btn-circle-grey, .btn-select, .btn-select-red, .btn-select-orange, .btn-select-yellow, .btn-select-green, .btn-select-blue, .btn-select-violet, .btn-select-black, .btn-select-grey, .btn-switch, .btn-switch-red, .btn-switch-orange, .btn-switch-yellow, .btn-switch-green, .btn-switch-blue, .btn-switch-violet, .btn-switch-black, .btn-switch-grey {
+  background: #efefef;
+  border-color: #a9a9a9; }
+
+.btn {
+  display: inline-block;
+  border: 1px solid transparent;
+  padding: 0 8px;
+  cursor: pointer;
+  font-size: 14px;
+  text-align: center;
+  line-height: 24px;
+  text-decoration: none;
+  vertical-align: middle;
+  white-space: nowrap; }
+  .btn:hover {
+    background: #ddd; }
+
+.btn-circle, .btn-circle-red, .btn-circle-orange, .btn-circle-yellow, .btn-circle-green, .btn-circle-blue, .btn-circle-violet, .btn-circle-black, .btn-circle-grey {
+  height: 70px;
+  width: 70px;
+  border-radius: 70px;
+  padding: 0;
+  line-height: 70px; }
+
+.btn-select:after, .btn-select-red:after, .btn-select-orange:after, .btn-select-yellow:after, .btn-select-green:after, .btn-select-blue:after, .btn-select-violet:after, .btn-select-black:after, .btn-select-grey:after {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  content: "";
+  vertical-align: -2px;
+  border: 4px solid;
+  border-right-color: transparent;
+  border-left-color: transparent;
+  border-bottom-color: transparent;
+  margin-left: 3px; }
+
+.btn-switch .btn-first, .btn-switch-red .btn-first, .btn-switch-orange .btn-first, .btn-switch-yellow .btn-first, .btn-switch-green .btn-first, .btn-switch-blue .btn-first, .btn-switch-violet .btn-first, .btn-switch-black .btn-first, .btn-switch-grey .btn-first {
+  padding-right: 8px; }
+.btn-switch .btn-second, .btn-switch-red .btn-second, .btn-switch-orange .btn-second, .btn-switch-yellow .btn-second, .btn-switch-green .btn-second, .btn-switch-blue .btn-second, .btn-switch-violet .btn-second, .btn-switch-black .btn-second, .btn-switch-grey .btn-second {
+  display: inline-block;
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  padding: 0 5px;
+  margin-right: -8px;
+  background: #fff; }
+
+.btn-blank {
+  border-color: #a9a9a9;
+  color: #8c96a0; }
+
+.btn-red, .btn-default-red,
+.btn-round-red,
+.btn-circle-red,
+.btn-select-red,
+.btn-switch-red {
+  border: 1px solid #b42323;
+  color: #fff;
+  box-shadow: 0 1px 2px #e99494 inset, 0 -1px 0 #954b4b inset, 0 -2px 3px #e99494 inset;
+  background: -webkit-linear-gradient(top, #d53939, #b92929);
+  background: -moz-linear-gradient(top, #d53939, #b92929);
+  background: linear-gradient(top, #d53939, #b92929); }
+  .btn-red:hover, .btn-default-red:hover,
+  .btn-round-red:hover,
+  .btn-circle-red:hover,
+  .btn-select-red:hover,
+  .btn-switch-red:hover {
+    background: -webkit-linear-gradient(top, #eb6f6f, #c83c3c);
+    background: -moz-linear-gradient(top, #eb6f6f, #c83c3c);
+    background: linear-gradient(top, #eb6f6f, #c83c3c); }
+
+.btn-orange, .btn-default-orange,
+.btn-round-orange,
+.btn-circle-orange,
+.btn-select-orange,
+.btn-switch-orange {
+  border: 1px solid #ff561c;
+  color: #fff;
+  box-shadow: 0 1px 2px #ffad93 inset, 0 -1px 0 #ec8c6b inset, 0 -2px 3px #ffad93 inset;
+  background: -webkit-linear-gradient(top, #ff6e41, #ff6631);
+  background: -moz-linear-gradient(top, #ff6e41, #ff6631);
+  background: linear-gradient(top, #ff6e41, #ff6631); }
+  .btn-orange:hover, .btn-default-orange:hover,
+  .btn-round-orange:hover,
+  .btn-circle-orange:hover,
+  .btn-select-orange:hover,
+  .btn-switch-orange:hover {
+    background: -webkit-linear-gradient(top, #fd8864, #ff8155);
+    background: -moz-linear-gradient(top, #fd8864, #ff8155);
+    background: linear-gradient(top, #fd8864, #ff8155); }
+
+.btn-yellow, .btn-default-yellow,
+.btn-round-yellow,
+.btn-circle-yellow,
+.btn-select-yellow,
+.btn-switch-yellow {
+  border: 1px solid #d2a000;
+  color: #fff;
+  box-shadow: 0 1px 2px #fedd71 inset, 0 -1px 0 #a38b39 inset, 0 -2px 3px #fedd71 inset;
+  background: -webkit-linear-gradient(top, #fece34, #d8a605);
+  background: -moz-linear-gradient(top, #fece34, #d8a605);
+  background: linear-gradient(top, #fece34, #d8a605); }
+  .btn-yellow:hover, .btn-default-yellow:hover,
+  .btn-round-yellow:hover,
+  .btn-circle-yellow:hover,
+  .btn-select-yellow:hover,
+  .btn-switch-yellow:hover {
+    background: -webkit-linear-gradient(top, #ffd859, #e3bb38);
+    background: -moz-linear-gradient(top, #ffd859, #e3bb38);
+    background: linear-gradient(top, #ffd859, #e3bb38); }
+
+.btn-green, .btn-default-green,
+.btn-round-green,
+.btn-circle-green,
+.btn-select-green,
+.btn-switch-green {
+  border: 1px solid #64c878;
+  color: #fff;
+  box-shadow: 0 1px 2px #b9ecc4 inset, 0 -1px 0 #6c9f76 inset, 0 -2px 3px #b9ecc4 inset;
+  background: -webkit-linear-gradient(top, #90dfa2, #84d494);
+  background: -moz-linear-gradient(top, #90dfa2, #84d494);
+  background: linear-gradient(top, #90dfa2, #84d494); }
+  .btn-green:hover, .btn-default-green:hover,
+  .btn-round-green:hover,
+  .btn-circle-green:hover,
+  .btn-select-green:hover,
+  .btn-switch-green:hover {
+    background: -webkit-linear-gradient(top, #aaebb9, #82d392);
+    background: -moz-linear-gradient(top, #aaebb9, #82d392);
+    background: linear-gradient(top, #aaebb9, #82d392); }
+
+.btn-blue, .btn-default-blue,
+.btn-round-blue,
+.btn-circle-blue,
+.btn-select-blue,
+.btn-switch-blue {
+  border: 1px solid #1e7db9;
+  color: #fff;
+  box-shadow: 0 1px 2px #8fcaee inset, 0 -1px 0 #497897 inset, 0 -2px 3px #8fcaee inset;
+  background: -webkit-linear-gradient(top, #42a4e0, #2e88c0);
+  background: -moz-linear-gradient(top, #42a4e0, #2e88c0);
+  background: linear-gradient(top, #42a4e0, #2e88c0); }
+  .btn-blue:hover, .btn-default-blue:hover,
+  .btn-round-blue:hover,
+  .btn-circle-blue:hover,
+  .btn-select-blue:hover,
+  .btn-switch-blue:hover {
+    background: -webkit-linear-gradient(top, #70bfef, #4097ce);
+    background: -moz-linear-gradient(top, #70bfef, #4097ce);
+    background: linear-gradient(top, #70bfef, #4097ce); }
+
+.btn-violet, .btn-default-violet,
+.btn-round-violet,
+.btn-circle-violet,
+.btn-select-violet,
+.btn-switch-violet {
+  border: 1px solid #b71eb9;
+  color: #fff;
+  box-shadow: 0 1px 2px #ec8eed inset, 0 -1px 0 #954896 inset, 0 -2px 3px #ec8eed inset;
+  background: -webkit-linear-gradient(top, #da41e0, #bd2ebf);
+  background: -moz-linear-gradient(top, #da41e0, #bd2ebf);
+  background: linear-gradient(top, #da41e0, #bd2ebf); }
+  .btn-violet:hover, .btn-default-violet:hover,
+  .btn-round-violet:hover,
+  .btn-circle-violet:hover,
+  .btn-select-violet:hover,
+  .btn-switch-violet:hover {
+    background: -webkit-linear-gradient(top, #ee71f0, #cc40cf);
+    background: -moz-linear-gradient(top, #ee71f0, #cc40cf);
+    background: linear-gradient(top, #ee71f0, #cc40cf); }
+
+.btn-black, .btn-default-black,
+.btn-round-black,
+.btn-circle-black,
+.btn-select-black,
+.btn-switch-black {
+  border: 1px solid #333;
+  color: #fff;
+  box-shadow: 0 1px 2px #8b8b8b inset, 0 -1px 0 #3d3d3d inset, 0 -2px 3px #8b8b8b inset;
+  background: -webkit-linear-gradient(top, #656565, #4a4a4a);
+  background: -moz-linear-gradient(top, #656565, #4a4a4a);
+  background: linear-gradient(top, #656565, #4a4a4a); }
+  .btn-black:hover, .btn-default-black:hover,
+  .btn-round-black:hover,
+  .btn-circle-black:hover,
+  .btn-select-black:hover,
+  .btn-switch-black:hover {
+    background: -webkit-linear-gradient(top, #818181, #575757);
+    background: -moz-linear-gradient(top, #818181, #575757);
+    background: linear-gradient(top, #818181, #575757); }
+
+.btn-grey, .btn-default-grey,
+.btn-round-grey,
+.btn-circle-grey,
+.btn-select-grey,
+.btn-switch-grey {
+  border: 1px solid #dce1e6;
+  color: #333;
+  box-shadow: 0 1px 2px #fff inset, 0 -1px 0 #a8abae inset, 0 -2px 3px #fff inset;
+  background: -webkit-linear-gradient(top, #f2f3f7, #e4e8ec);
+  background: -moz-linear-gradient(top, #f2f3f7, #e4e8ec);
+  background: linear-gradient(top, #f2f3f7, #e4e8ec); }
+  .btn-grey:hover, .btn-default-grey:hover,
+  .btn-round-grey:hover,
+  .btn-circle-grey:hover,
+  .btn-select-grey:hover,
+  .btn-switch-grey:hover {
+    background: -webkit-linear-gradient(top, #fefefe, #ebeced);
+    background: -moz-linear-gradient(top, #fefefe, #ebeced);
+    background: linear-gradient(top, #fefefe, #ebeced); }
+
+/*# sourceMappingURL=btn.css.map */

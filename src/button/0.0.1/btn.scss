@@ -1,0 +1,199 @@
+/**
+* 按钮常用的样式,包括
+* author:	wangyanhong@cmcm.com
+* date:		2014-11-26
+* version:	0.0.1
+*/
+//基础颜色与背景
+$white: #fff;
+$black: #333;
+%b-radius-3 {
+	border-radius: 3px;
+}
+%c-white {
+	color: $white;
+}
+%c-black {
+	color: $black;
+}
+%default {
+	@extend %c-black;
+	background: #efefef;
+	border-color: #a9a9a9;
+}
+.btn {
+	display: inline-block;
+	border:1px solid transparent;
+	padding: 0 8px;
+	cursor: pointer;
+	font-size: 14px;
+	text-align: center;
+	line-height: 24px;
+	text-decoration: none;
+	vertical-align: middle;
+	white-space: nowrap;
+	&:hover{
+		background: #ddd;
+	}
+}
+.btn-default {
+	@extend %default;
+}
+.btn-round {
+	@extend %b-radius-3;
+	@extend %default;
+}
+.btn-circle {
+	height: 70px;
+	width: 70px;
+	border-radius: 70px;
+	padding: 0;
+	line-height: 70px;
+	@extend %default;
+}
+.btn-select {
+	@extend %b-radius-3;
+	@extend %default;
+	&:after {
+		display: inline-block;
+		width: 0;
+		height: 0;
+		content: "";
+		vertical-align: -2px;
+		border: 4px solid;
+		border-right-color: transparent;
+		border-left-color: transparent;
+		border-bottom-color: transparent;
+		margin-left: 3px;
+	}
+}
+.btn-switch {
+	@extend %b-radius-3;
+	@extend %default;
+	.btn-first {
+		padding-right: 8px;
+	}
+	.btn-second {
+		display: inline-block;
+		border-top-right-radius: 3px;
+		border-bottom-right-radius: 3px;
+		padding: 0 5px;
+		margin-right: -8px;
+		@extend %c-black;
+		background: #fff;
+	}
+}
+.btn-blank {
+	border-color: #a9a9a9;
+	color: #8c96a0;
+}
+
+//八种颜色的渐变样式
+$colorArr:
+	(red #b42323 $white #e99494 #954b4b #d53939 #b92929 #eb6f6f #c83c3c) 
+	(orange #ff561c $white #ffad93 #ec8c6b #ff6e41 #ff6631 #fd8864 #ff8155)
+ 	(yellow #d2a000 $white #fedd71 #a38b39 #fece34 #d8a605 #ffd859 #e3bb38)
+ 	(green #64c878 $white #b9ecc4 #6c9f76 #90dfa2 #84d494 #aaebb9 #82d392)
+ 	(blue #1e7db9 $white #8fcaee #497897 #42a4e0 #2e88c0 #70bfef #4097ce)
+ 	(violet #b71eb9 $white #ec8eed #954896 #da41e0 #bd2ebf #ee71f0 #cc40cf)
+ 	(black #333 $white #8b8b8b #3d3d3d #656565 #4a4a4a #818181 #575757)
+ 	(grey #dce1e6 $black $white #a8abae #f2f3f7 #e4e8ec #fefefe #ebeced);
+@each $colorClass in $colorArr {
+	$class: nth($colorClass, 1);
+	$brd: nth($colorClass, 2);
+	$color: nth($colorClass, 3);
+	$shadow1: nth($colorClass, 4);
+	$shadow2: nth($colorClass, 5);
+	$bg1: nth($colorClass, 6);
+	$bg2: nth($colorClass, 7);
+	$hover1: nth($colorClass, 8);
+	$hover2: nth($colorClass, 9);
+	.btn-#{$class} {
+		border: 1px solid $brd;
+		color: $color;
+		box-shadow: 0 1px 2px $shadow1 inset,0 -1px 0 $shadow2 inset,0 -2px 3px $shadow1 inset;
+		background: -webkit-linear-gradient(top,$bg1, $bg2);
+		background: -moz-linear-gradient(top,$bg1, $bg2);
+		background: linear-gradient(top,$bg1, $bg2);
+		&:hover {
+			background: -webkit-linear-gradient(top,$hover1, $hover2);
+			background: -moz-linear-gradient(top,$hover1, $hover2);
+			background: linear-gradient(top,$hover1, $hover2);
+		}
+	}
+
+	// 不同形状调用其形状样式
+	.btn-default-#{$class} {
+		@extend .btn-default;
+	}
+	.btn-round-#{$class} {
+		@extend .btn-round;
+	}
+	.btn-circle-#{$class} {
+		@extend .btn-circle;
+	}
+	.btn-select-#{$class} {
+		@extend .btn-select;
+	}
+	.btn-switch-#{$class} {
+		@extend .btn-switch;
+	}
+}
+
+// 不同形状的各种颜色设置
+.btn-default-red, 
+.btn-round-red, 
+.btn-circle-red, 
+.btn-select-red, 
+.btn-switch-red {
+	@extend .btn-red;
+}
+.btn-default-orange, 
+.btn-round-orange, 
+.btn-circle-orange, 
+.btn-select-orange, 
+.btn-switch-orange {
+	@extend .btn-orange;
+}
+.btn-default-yellow,
+.btn-round-yellow, 
+.btn-circle-yellow, 
+.btn-select-yellow, 
+.btn-switch-yellow {
+	@extend .btn-yellow;
+}
+.btn-default-green,
+.btn-round-green, 
+.btn-circle-green, 
+.btn-select-green, 
+.btn-switch-green {
+	@extend .btn-green;
+}
+.btn-default-blue,
+.btn-round-blue, 
+.btn-circle-blue, 
+.btn-select-blue, 
+.btn-switch-blue {
+	@extend .btn-blue;
+}
+.btn-default-violet,
+.btn-round-violet, 
+.btn-circle-violet, 
+.btn-select-violet, 
+.btn-switch-violet {
+	@extend .btn-violet;
+}
+.btn-default-black,
+.btn-round-black, 
+.btn-circle-black, 
+.btn-select-black, 
+.btn-switch-black {
+	@extend .btn-black;
+}
+.btn-default-grey,
+.btn-round-grey, 
+.btn-circle-grey, 
+.btn-select-grey, 
+.btn-switch-grey {
+	@extend .btn-grey;
+}
